@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zeh-hS-VnH" customClass="BindableDatePicker" customModule="Bindable">
+                                <rect key="frame" x="0.0" y="20" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="564862447.80261397">
+                                    <!--2018-11-25 18:14:07 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ju-0a-CIo">
+                                <rect key="frame" x="279" y="236" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vGX-F3-P3L">
+                                <rect key="frame" x="246.5" y="286.5" width="107" height="31"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3t-Np-gFN" customClass="BindableSwitch" customModule="Bindable">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l27-fu-toh">
+                                        <rect key="frame" x="65" y="0.0" width="42" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-xr-lhW">
+                                <rect key="frame" x="224" y="347.5" width="152" height="29"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-ja-OqA" customClass="BindableStepper" customModule="Bindable">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jt9-UB-OWr">
+                                        <rect key="frame" x="110" y="0.0" width="42" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xMH-Hk-Ybi">
+                                <rect key="frame" x="126" y="406.5" width="348" height="30"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ev6-jW-Bdd" customClass="BindableSlider" customModule="Bindable">
+                                        <rect key="frame" x="-2" y="0.0" width="294" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="290" id="RCL-dA-HMi"/>
+                                        </constraints>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8w-vZ-VT7">
+                                        <rect key="frame" x="306" y="0.0" width="42" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jSV-4Z-sgb">
+                                <rect key="frame" x="171" y="466.5" width="258" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c4C-0I-QQq" customClass="BindableTextField" customModule="Bindable">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="0Ru-12-q8b"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcB-Sl-FXP">
+                                        <rect key="frame" x="216" y="0.0" width="42" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h0y-xr-lhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="17X-G9-sLJ"/>
+                            <constraint firstItem="h0y-xr-lhW" firstAttribute="top" secondItem="vGX-F3-P3L" secondAttribute="bottom" constant="30" id="Dg7-Y8-cad"/>
+                            <constraint firstItem="jSV-4Z-sgb" firstAttribute="top" secondItem="xMH-Hk-Ybi" secondAttribute="bottom" constant="30" id="I1L-vM-p0K"/>
+                            <constraint firstItem="Zeh-hS-VnH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kpw-jb-WL3"/>
+                            <constraint firstItem="xMH-Hk-Ybi" firstAttribute="top" secondItem="h0y-xr-lhW" secondAttribute="bottom" constant="30" id="L1H-XX-uI5"/>
+                            <constraint firstItem="vGX-F3-P3L" firstAttribute="top" secondItem="8Ju-0a-CIo" secondAttribute="bottom" constant="30" id="Ue8-Rx-9Uz"/>
+                            <constraint firstItem="vGX-F3-P3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fNG-2x-JcP"/>
+                            <constraint firstItem="Zeh-hS-VnH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h4C-hC-5rh"/>
+                            <constraint firstItem="8Ju-0a-CIo" firstAttribute="top" secondItem="Zeh-hS-VnH" secondAttribute="bottom" id="nm1-K3-LKv"/>
+                            <constraint firstItem="xMH-Hk-Ybi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pgk-AV-AEh"/>
+                            <constraint firstItem="8Ju-0a-CIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHy-AO-dmE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zeh-hS-VnH" secondAttribute="trailing" id="uWg-SP-lv6"/>
+                            <constraint firstItem="jSV-4Z-sgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vPX-Zh-HbB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="jt9-UB-OWr" id="wLV-Bc-RSx"/>
+                        <outlet property="dateLabel" destination="8Ju-0a-CIo" id="iGY-tR-ASA"/>
+                        <outlet property="picker" destination="Zeh-hS-VnH" id="ah3-Oe-AYp"/>
+                        <outlet property="rateLabel" destination="T8w-vZ-VT7" id="b67-OH-ts7"/>
+                        <outlet property="slider" destination="ev6-jW-Bdd" id="xzO-du-tU6"/>
+                        <outlet property="stateLabel" destination="l27-fu-toh" id="GGU-V8-h8D"/>
+                        <outlet property="stepper" destination="cj7-ja-OqA" id="3Pb-4g-SxG"/>
+                        <outlet property="textField" destination="c4C-0I-QQq" id="gdq-bc-dpC"/>
+                        <outlet property="textLabel" destination="ZcB-Sl-FXP" id="fva-FA-jWk"/>
+                        <outlet property="toggle" destination="I3t-Np-gFN" id="nTd-4J-uPr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
